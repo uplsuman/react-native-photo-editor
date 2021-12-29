@@ -76,8 +76,9 @@ open class PhotoEditorActivity : AppCompatActivity(), OnPhotoEditorListener, Vie
   @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    makeFullScreen()
-    setContentView(R.layout.photo_editor_view)
+//    makeFullScreen()
+    window.statusBarColor = ContextCompat.getColor(this, R.color.white)
+    window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;    setContentView(R.layout.photo_editor_view)
     initViews()
 
     //intern
@@ -197,7 +198,7 @@ open class PhotoEditorActivity : AppCompatActivity(), OnPhotoEditorListener, Vie
     //SAVE
     val btnSave: TextView = findViewById(R.id.btnSave)
     btnSave.setOnClickListener(this)
-    btnSave.setTextColor(Color.BLACK)
+//    btnSave.setTextColor(Color.BLACK)
 
     mPhotoEditorView = findViewById(R.id.photoEditorView)
     mTxtCurrentTool = findViewById(R.id.txtCurrentTool)

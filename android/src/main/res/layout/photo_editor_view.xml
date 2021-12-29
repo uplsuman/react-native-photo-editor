@@ -102,6 +102,7 @@
     android:layout_marginEnd="12dp"
     android:layout_marginRight="12dp"
     android:background="@drawable/button_shape"
+    android:textColor="@color/white"
     android:paddingHorizontal="12dp"
     android:paddingVertical="6dp"
     android:text="@string/done"
