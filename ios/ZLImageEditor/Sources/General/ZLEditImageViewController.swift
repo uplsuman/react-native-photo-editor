@@ -381,10 +381,10 @@ public class ZLEditImageViewController: UIViewController {
     }
     
     func setupUI() {
-        self.view.backgroundColor = .black
+        self.view.backgroundColor = .white
         
         self.scrollView = UIScrollView()
-        self.scrollView.backgroundColor = .black
+        self.scrollView.backgroundColor = .white
         self.scrollView.minimumZoomScale = 1
         self.scrollView.maximumZoomScale = 3
         self.scrollView.delegate = self
@@ -397,7 +397,7 @@ public class ZLEditImageViewController: UIViewController {
         self.imageView = UIImageView(image: self.originalImage)
         self.imageView.contentMode = .scaleAspectFit
         self.imageView.clipsToBounds = true
-        self.imageView.backgroundColor = .black
+        self.imageView.backgroundColor = .white
         self.containerView.addSubview(self.imageView)
         
         self.drawingImageView = UIImageView()
@@ -1394,7 +1394,7 @@ class ZLFilterImageCell: UICollectionViewCell {
 
         self.nameLabel.font = UIFont.systemFont(ofSize: 12, weight: .bold)
         self.nameLabel.textAlignment = .center
-        self.nameLabel.textColor = .black
+        self.nameLabel.textColor = .white
         self.nameLabel.adjustsFontSizeToFitWidth = true
         self.nameLabel.minimumScaleFactor = 0.5
         self.nameLabel.numberOfLines = 1
